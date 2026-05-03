@@ -25,7 +25,7 @@
                     <div class="dot red"></div>
                     <div class="dot yellow"></div>
                     <div class="dot green"></div>
-                    <span style="font-size: 0.7rem; color: #555; margin-left: 10px;">nexus-nova --sovereign-network --live</span>
+                    <span style="font-size: 0.7rem; color: #555; margin-left: 10px;">nexus-nova --sovereign-network --stealth-mode</span>
                 </div>
                 <div class="terminal-content" id="terminal-output">
                     <!-- Lines injected by JS -->
@@ -142,7 +142,7 @@
     <section id="verified-research" class="container">
         <div style="text-align: center; margin-bottom: 4rem;">
             <h2 class="gradient-text" style="font-size: 2.5rem;">Verified Research Registry</h2>
-            <p style="color: #777;">Immutable proof of critical vulnerabilities discovered and verified by the Nexus Nova Swarm.</p>
+            <p style="color: #777;">Proof of discovery for Tier-1 vulnerabilities. Technical traces redacted for active triage.</p>
         </div>
         
         <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 2rem;">
@@ -151,15 +151,17 @@
                 <div style="display: flex; justify-content: space-between; align-items: flex-start; margin-bottom: 1.5rem;">
                     <div>
                         <span class="badge" style="background: rgba(0, 188, 212, 0.2); color: #00bcd4; border-radius: 4px; padding: 2px 8px; font-size: 0.7rem;">BASE BRIDGE</span>
-                        <h3 style="margin-top: 0.5rem;">V0 Infinite Replay Attack</h3>
+                        <h3 style="margin-top: 0.5rem;">[REDACTED] Bridge Logic Flaw</h3>
                     </div>
                     <span style="color: #ff5f56; font-weight: 700; font-size: 0.8rem;">CRITICAL</span>
                 </div>
-                <p style="font-size: 0.9rem; color: #aaa; margin-bottom: 1.5rem;">Cross-domain logic flaw allows for infinite re-execution of legacy V0 messages by manipulating gas parameters.</p>
-                <div style="background: rgba(0,0,0,0.3); border-radius: 12px; overflow: hidden; margin-bottom: 1.5rem; border: 1px solid rgba(255,255,255,0.05);">
-                    <img src="./messenger_replay_ground_truth.png" alt="Base Replay Proof" style="width: 100%; display: block;">
+                <p style="font-size: 0.9rem; color: #aaa; margin-bottom: 1.5rem;">Vulnerability confirmed in L2 Messenger relay logic. Payload verification: SUCCESS.</p>
+                <div style="background: rgba(0,0,0,0.8); border-radius: 12px; overflow: hidden; margin-bottom: 1.5rem; border: 1px solid var(--primary-color); display: flex; align-items: center; justify-content: center; height: 200px; position: relative;">
+                    <div style="color: var(--primary-color); font-family: var(--font-mono); font-size: 0.8rem; text-align: center; padding: 2rem;">
+                        [ DETERMINISTIC PROOF CAPTURED ]<br>
+                        <span style="font-size: 0.6rem; color: #555;">REDACTED FOR ACTIVE H1 TRIAGE</span>
+                    </div>
                 </div>
-                <a href="./ground_truth_proof.html" target="_blank" style="font-size: 0.8rem; color: var(--primary-color); text-decoration: none;">View Verified Trace &rarr;</a>
             </div>
 
             <!-- Cosmos IBC Finding -->
@@ -167,15 +169,17 @@
                 <div style="display: flex; justify-content: space-between; align-items: flex-start; margin-bottom: 1.5rem;">
                     <div>
                         <span class="badge" style="background: rgba(112, 0, 255, 0.2); color: #7000ff; border-radius: 4px; padding: 2px 8px; font-size: 0.7rem;">COSMOS IBC</span>
-                        <h3 style="margin-top: 0.5rem;">Protocol Handshake Bypass</h3>
+                        <h3 style="margin-top: 0.5rem;">[REDACTED] Protocol Handshake Flaw</h3>
                     </div>
                     <span style="color: #ffbd2e; font-weight: 700; font-size: 0.8rem;">HIGH</span>
                 </div>
-                <p style="font-size: 0.9rem; color: #aaa; margin-bottom: 1.5rem;">Multiple flaws discovered in ibc-go including Sentinel Root DoS and Channel Upgrade DelayPeriod bypass.</p>
-                <div style="background: rgba(0,0,0,0.3); border-radius: 12px; overflow: hidden; margin-bottom: 1.5rem; border: 1px solid rgba(255,255,255,0.05);">
-                    <img src="./proof_cosmos_portfolio.png" alt="Cosmos IBC Proof" style="width: 100%; display: block;">
+                <p style="font-size: 0.9rem; color: #aaa; margin-bottom: 1.5rem;">Verified bypass of core protocol security parameters. Impact: Verified.</p>
+                <div style="background: rgba(0,0,0,0.8); border-radius: 12px; overflow: hidden; margin-bottom: 1.5rem; border: 1px solid var(--primary-color); display: flex; align-items: center; justify-content: center; height: 200px; position: relative;">
+                    <div style="color: var(--primary-color); font-family: var(--font-mono); font-size: 0.8rem; text-align: center; padding: 2rem;">
+                        [ DETERMINISTIC PROOF CAPTURED ]<br>
+                        <span style="font-size: 0.6rem; color: #555;">REDACTED FOR ACTIVE H1 TRIAGE</span>
+                    </div>
                 </div>
-                <a href="./cosmos_proofs.html" target="_blank" style="font-size: 0.8rem; color: var(--primary-color); text-decoration: none;">View Verified Trace &rarr;</a>
             </div>
         </div>
     </section>

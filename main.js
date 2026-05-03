@@ -1,18 +1,18 @@
 const terminal = document.getElementById('terminal-output');
 
 const lines = [
-    { text: "> nexus-nova --sovereign-network --target base-bridge --target cosmos-ibc", type: "cmd" },
+    { text: "> nexus-nova --sovereign-network --target [PROTECTED] --stealth", type: "cmd" },
     { text: "[*] Initializing Sovereign Supervisor Swarm...", type: "info" },
-    { text: "[*] Researcher: Broadcast FINDING_READY -> Base_Messenger_V0", type: "info" },
-    { text: "[!] Supervisor: Verifying Hashing Asymmetry on Mainnet Fork...", type: "warning" },
-    { text: "[+] [BASE] [PASS] test_Messenger_V0_Replay_Bypass()", type: "success" },
-    { text: "[*] Researcher: Broadcast FINDING_READY -> Cosmos_IBC_Handshake", type: "info" },
-    { text: "[!] Supervisor: Verifying DelayPeriod Bypass in Handshake...", type: "warning" },
-    { text: "[+] [COSMOS] [PASS] TestChanUpgradeDelayPeriodBypass()", type: "success" },
-    { text: "[!] Supervisor: Verifying SentinelRoot Persistence DoS...", type: "warning" },
-    { text: "[+] [COSMOS] [PASS] TestUnitSentinelRootDoS()", type: "success" },
+    { text: "[*] Researcher: Broadcast FINDING_READY -> [SIG_ALPHA]", type: "info" },
+    { text: "[!] Supervisor: Verifying Logic Asymmetry (Mainnet Mirror)...", type: "warning" },
+    { text: "[+] [SIG_ALPHA] [PASS] Verified Deterministic Bypass", type: "success" },
+    { text: "[*] Researcher: Broadcast FINDING_READY -> [SIG_BETA]", type: "info" },
+    { text: "[!] Supervisor: Verifying Handshake Parameters...", type: "warning" },
+    { text: "[+] [SIG_BETA] [PASS] Verified Protocol Bypass", type: "success" },
+    { text: "[!] Supervisor: Verifying Persistence Vector...", type: "warning" },
+    { text: "[+] [SIG_GAMMA] [PASS] Verified State Denial", type: "success" },
     { text: "[+] All findings verified. Technical Truth established.", type: "success" },
-    { text: "> Sovereign Certificate Registry Updated.", type: "cmd" }
+    { text: "> Sovereign Certificate Registry Updated (Stealth Mode).", type: "cmd" }
 ];
 
 function addLine(index) {
