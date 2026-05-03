@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nexus Nova | Technical Truth</title>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700;800&family=JetBrains+Mono&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header class="hero">
+        <div class="hero-bg"></div>
+        <div class="container">
+            <h1 class="gradient-text">Nexus Nova</h1>
+            <p>Moving from claims to <span style="color: white; font-weight: 700;">Technical Truth</span>. Deterministic security verification at industry-shattering speeds.</p>
+            
+            <div class="terminal-window glass" id="audit-terminal">
+                <div class="terminal-header">
+                    <div class="dot red"></div>
+                    <div class="dot yellow"></div>
+                    <div class="dot green"></div>
+                    <span style="font-size: 0.7rem; color: #555; margin-left: 10px;">nexus-nova --live-audit</span>
+                </div>
+                <div class="terminal-content" id="terminal-output">
+                    <!-- Lines injected by JS -->
+                </div>
+            </div>
+
+            <div style="margin-top: 4rem;">
+                <a href="#audit-invite" class="cta-button">Request Live Audit</a>
+            </div>
+        </div>
+    </header>
+
+    <section id="metrics" class="container">
+        <h2 style="text-align: center; margin-bottom: 4rem;">Performance Benchmarks</h2>
+        <div class="stats-grid">
+            <div class="stat-card glass">
+                <span class="stat-value gradient-text">917ms</span>
+                <span class="stat-label">Avg. Time to Proof</span>
+            </div>
+            <div class="stat-card glass">
+                <span class="stat-value gradient-text">100%</span>
+                <span class="stat-label">Fidelity Rate</span>
+            </div>
+            <div class="stat-card glass">
+                <span class="stat-value gradient-text">Zero</span>
+                <span class="stat-label">False Positives</span>
+            </div>
+        </div>
+
+        <table class="comparison-table">
+            <thead>
+                <tr>
+                    <th>ENTITY</th>
+                    <th>TIME TO PROOF</th>
+                    <th>NEXUSNOVA ADVANTAGE</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Human Auditor</td>
+                    <td>~40 Hours</td>
+                    <td>~157,033x</td>
+                </tr>
+                <tr>
+                    <td>Xbow (AI Pentesting)</td>
+                    <td>~28 Minutes</td>
+                    <td>~1,832x</td>
+                </tr>
+                <tr>
+                    <td>Standard Fuzzer</td>
+                    <td>~15 Minutes</td>
+                    <td>~981x</td>
+                </tr>
+                <tr class="highlight-row">
+                    <td><strong>Nexus Nova</strong></td>
+                    <td><strong>917 ms</strong></td>
+                    <td><strong>The Standard</strong></td>
+                </tr>
+            </tbody>
+        </table>
+    </section>
+
+    <section id="audit-invite" style="background: rgba(112, 0, 255, 0.05); border-top: 1px solid var(--glass-border);">
+        <div class="container" style="text-align: center;">
+            <h2 style="margin-bottom: 2rem;">Challenge the Truth</h2>
+            <p style="max-width: 600px; margin: 0 auto 3rem; color: #aaa;">
+                Skepticism is healthy. We invite strategic partners and auditors to provide a mainnet target for a Live Zero-Touch Audit.
+            </p>
+            <div class="glass" style="max-width: 500px; margin: 0 auto; padding: 3rem; border-radius: 24px;">
+                <form id="audit-form" onsubmit="event.preventDefault(); alert('Audit Request Sent. Awaiting Technical Truth confirmation.');">
+                    <input type="text" placeholder="Protocol Name / Contract Address" style="width: 100%; padding: 1rem; background: rgba(255,255,255,0.05); border: 1px solid var(--glass-border); border-radius: 8px; color: white; margin-bottom: 1rem;">
+                    <input type="email" placeholder="Your Security Email" style="width: 100%; padding: 1rem; background: rgba(255,255,255,0.05); border: 1px solid var(--glass-border); border-radius: 8px; color: white; margin-bottom: 2rem;">
+                    <button type="submit" class="cta-button" style="width: 100%;">Submit Target</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <footer style="padding: 4rem 0; text-align: center; color: #444; font-size: 0.8rem; border-top: 1px solid var(--glass-border);">
+        &copy; 2026 AgentAI / Nexus Nova Security. All Rights Reserved.
+    </footer>
+
+    <script type="module" src="./main.js"></script>
+</body>
+</html>
